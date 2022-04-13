@@ -6,11 +6,13 @@
 html,body{
     background-color: darkgrey;
     min-height: 100vh;
+   
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
+    
 }
 header h1{
     padding-top: 50px;
@@ -28,13 +30,31 @@ a:hover{
     text-decoration: underline;
 }
 section{
-    margin-top: 30px;
-    line-height: 1.8em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2.em;
     font-weight: bold;
-    background-image: url(imagens/background001.jpg);
+    
+    
+}
+section.normal{
+    background-color: white;
+    color black;
+}
+section.imagem{
+    background-color: black;
+    color: white;
+}
+section.imagem>p{
+    background-color: white;
+    color:rgba(0, 0, 0, 0.388);
+    width: 400px;
 }
 footer{
     text-align: center;
     background-color: black;
     color: white;
+}
+
 }
