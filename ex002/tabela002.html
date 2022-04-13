@@ -9,21 +9,44 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgrey;
+        }
         table{
-            width: 500px;
+            min-width: 30vw;
             border-collapse: collapse;
+            position: relative;
+        }
+        tbody tr:nth-child(2n){
+            background-color:lightgray;
+        }
+        td{
+            border:0.8px solid black; 
+            text-align:left;
+            padding: 5px;
         }
         thead,tfoot{
-            background-color: gray;
+            background-color: rgb(92, 92, 92);
             color:white;
-        }
-        td,th{
-            border:0.8px solid black; 
             text-align: center;
-            padding: 10px;
+            border:0.8px solid black;
+            
         }
+        th{
+            text-align: center;
+            padding: 5px;
+        }
+   
         .num{
             text-align: right;
+        }
+        thead>tr>th{
+            position: sticky;
+            background-color:rgb(92, 92, 92);
+            top: -1px;
         }
         
     </style>
@@ -32,9 +55,12 @@
     <h1>Uso de Tabelas grandes</h1>
 </body>
 <table>
+    <caption>
+        População das unidades federativas
+    </caption>
     <thead>
-        <th>Estado</th>
-        <th>Populaçao</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 50px;">Populaçao</th>
     </thead>
     <tbody>
         <tr>
@@ -101,9 +127,16 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
-            <th>180.745.586</th>
+            <th scope="row">Total de Habitantes</th>
+            <th class="num">180.745.586</th>
         </tr>
     </tfoot>
 </table>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda commodi, aut reiciendis necessitatibus cum quo amet similique perspiciatis! Quisquam quidem velit est amet recusandae provident delectus dolore commodi vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum sint suscipit aperiam eligendi, minus nobis, rem placeat asperiores facilis tempora, vitae dolorem adipisci. Exercitationem, dignissimos. Ullam nam optio aspernatur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus magni recusandae accusamus quaerat cupiditate quidem? Recusandae consectetur explicabo minus nisi tempore, libero ut commodi enim sit reprehenderit accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, saepe quidem odit animi eius in. Magnam id nam debitis, accusamus at cum quidem mollitia est eius veniam nostrum, assumenda deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur culpa eveniet. Maiores rem, nulla possimus ab cum quam, qui quae neque totam laudantium recusandae, earum velit libero dolorem perspiciatis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda commodi, aut reiciendis necessitatibus cum quo amet similique perspiciatis! Quisquam quidem velit est amet recusandae provident delectus dolore commodi vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum sint suscipit aperiam eligendi, minus nobis, rem placeat asperiores facilis tempora, vitae dolorem adipisci. Exercitationem, dignissimos. Ullam nam optio aspernatur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus magni recusandae accusamus quaerat cupiditate quidem? Recusandae consectetur explicabo minus nisi tempore, libero ut commodi enim sit reprehenderit accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, saepe quidem odit animi eius in. Magnam id nam debitis, accusamus at cum quidem mollitia est eius veniam nostrum, assumenda deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur culpa eveniet. Maiores rem, nulla possimus ab cum quam, qui quae neque totam laudantium recusandae, earum velit libero dolorem perspiciatis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda commodi, aut reiciendis necessitatibus cum quo amet similique perspiciatis! Quisquam quidem velit est amet recusandae provident delectus dolore commodi vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum sint suscipit aperiam eligendi, minus nobis, rem placeat asperiores facilis tempora, vitae dolorem adipisci. Exercitationem, dignissimos. Ullam nam optio aspernatur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus magni recusandae accusamus quaerat cupiditate quidem? Recusandae consectetur explicabo minus nisi tempore, libero ut commodi enim sit reprehenderit accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, saepe quidem odit animi eius in. Magnam id nam debitis, accusamus at cum quidem mollitia est eius veniam nostrum, assumenda deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur culpa eveniet. Maiores rem, nulla possimus ab cum quam, qui quae neque totam laudantium recusandae, earum velit libero dolorem perspiciatis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda commodi, aut reiciendis necessitatibus cum quo amet similique perspiciatis! Quisquam quidem velit est amet recusandae provident delectus dolore commodi vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum sint suscipit aperiam eligendi, minus nobis, rem placeat asperiores facilis tempora, vitae dolorem adipisci. Exercitationem, dignissimos. Ullam nam optio aspernatur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus magni recusandae accusamus quaerat cupiditate quidem? Recusandae consectetur explicabo minus nisi tempore, libero ut commodi enim sit reprehenderit accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, saepe quidem odit animi eius in. Magnam id nam debitis, accusamus at cum quidem mollitia est eius veniam nostrum, assumenda deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur culpa eveniet. Maiores rem, nulla possimus ab cum quam, qui quae neque totam laudantium recusandae, earum velit libero dolorem perspiciatis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda commodi, aut reiciendis necessitatibus cum quo amet similique perspiciatis! Quisquam quidem velit est amet recusandae provident delectus dolore commodi vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum sint suscipit aperiam eligendi, minus nobis, rem placeat asperiores facilis tempora, vitae dolorem adipisci. Exercitationem, dignissimos. Ullam nam optio aspernatur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus magni recusandae accusamus quaerat cupiditate quidem? Recusandae consectetur explicabo minus nisi tempore, libero ut commodi enim sit reprehenderit accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, saepe quidem odit animi eius in. Magnam id nam debitis, accusamus at cum quidem mollitia est eius veniam nostrum, assumenda deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur culpa eveniet. Maiores rem, nulla possimus ab cum quam, qui quae neque totam laudantium recusandae, earum velit libero dolorem perspiciatis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda commodi, aut reiciendis necessitatibus cum quo amet similique perspiciatis! Quisquam quidem velit est amet recusandae provident delectus dolore commodi vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum sint suscipit aperiam eligendi, minus nobis, rem placeat asperiores facilis tempora, vitae dolorem adipisci. Exercitationem, dignissimos. Ullam nam optio aspernatur enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus magni recusandae accusamus quaerat cupiditate quidem? Recusandae consectetur explicabo minus nisi tempore, libero ut commodi enim sit reprehenderit accusamus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, saepe quidem odit animi eius in. Magnam id nam debitis, accusamus at cum quidem mollitia est eius veniam nostrum, assumenda deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur culpa eveniet. Maiores rem, nulla possimus ab cum quam, qui quae neque totam laudantium recusandae, earum velit libero dolorem perspiciatis.</p>
+
 </html>
