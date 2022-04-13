@@ -45,6 +45,7 @@ section.normal{
 section.imagem{
     background-color: black;
     color: white;
+    
 }
 section.imagem>p{
     background-color: white;
