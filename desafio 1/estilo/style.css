@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte-header:'Passion One', cursive;
+    --font-poema:'Sriracha', cursive;
+    --font-padrão: Verdana, Geneva, Tahoma, sans-serif;
+}
 *{
     margin:0px;
     padding: 0px;
@@ -6,17 +14,20 @@
 html,body{
     background-color: darkgrey;
     min-height: 100vh;
+    font-family: var(--font-padrão);
    
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte-header);
     
 }
 header h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 header p{
     padding-bottom: 50px;
@@ -25,6 +36,7 @@ a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
+
 }
 a:hover{
     text-decoration: underline;
@@ -33,29 +45,44 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    line-height: 2.em;
-    font-weight: bold;
-    
-    
+    line-height: 2em;
+    font-family: var(--font-poema);
+    font-size: 3.5vw;
+}
+section>p{
+    padding-bottom: 2em;
 }
 section.normal{
     background-color: white;
-    color black;
+    color:black;
 }
 section.imagem{
     background-color: black;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
     
 }
 section.imagem>p{
-    background-color: white;
-    color:rgba(0, 0, 0, 0.388);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.381);
+    color:white;
+    display: inline-block;
+    padding: 5px;
+    text-shadow:px px 3px rgba(0, 0, 0, 0.532);
 }
 footer{
     text-align: center;
     background-color: black;
     color: white;
 }
-
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    
+    
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    
 }
